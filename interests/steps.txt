@@ -1,0 +1,21 @@
+1) Interest.objects.all()
+
+2) User.objects.all()
+
+3) interest1= Interest(name='coding', created_at=datetime.now())
+
+4) user = User(first_name="John", last_name="Johnson", age=25, occupation = "Worker", created_at= datetime.now(), Interest = Interest.objects.get(id=4))
+
+5) Interest.objects.get(id=1)
+
+6) User.objects.filter(first_name__contains = ‘J’)
+
+7) User.objects.filter(age__lte = 25)
+
+8) User.objects.filter(created_at__year = 2015)
+
+9) user = User.objects.get(id=5)
+
+      user.age = 26
+
+      user.save()
