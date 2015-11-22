@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>Raul's super awesome title</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" href="{% static 'survey/style.css' %}">
+	</head>
+	<body>
+		<div class= "wrapper">
+			<div>
+				<div class="message">
+					<p>You have submitted {{request.session.count}} times</p>
+				</div>
+				<div class= "form">
+					<h3>Submitted Information:</h3>
+					<p>Name: {{request.session.name}}</p>
+					<p>Dojo Location: {{request.session.location}}</p>
+					<p>Favorite Language: {{request.session.language}}</p>
+					<p>Comment: {{request.session.comment}}</p>
+					<form action = "/" methods="post">
+						<button>Go Back</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
