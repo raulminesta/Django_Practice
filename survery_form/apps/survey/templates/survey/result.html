@@ -16,7 +16,7 @@
 					<p>Dojo Location: {{request.session.location}}</p>
 					<p>Favorite Language: {{request.session.language}}</p>
 					<p>Comment: {{request.session.comment}}</p>
-					<form action = "/" methods="post">
+					<form action = "{% url 'index' %}" methods="post">
 						<button>Go Back</button>
 					</form>
 				</div>

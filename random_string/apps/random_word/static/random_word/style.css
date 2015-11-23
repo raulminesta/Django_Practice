@@ -1,0 +1,35 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper{
+	padding: 20px;
+	width: 100%;
+	height: 100%;
+	background-color: sienna;
+}
+.content{
+	width: 25%;
+	margin: 0px auto;
+	margin-top: 60px;
+	min-height: 100px;
+	outline: 1px solid black;
+	padding: 20px;
+	background-color: tan;
+}
+.string{
+	width: 90%;
+	height: 40px;
+	margin: 15px;
+	outline: 1px solid blue;
+	background-color: white;
+}
+button{
+	margin-left: 150px;
+	padding: 15px;
+	background-color: brown;
+	border: none; 
+}
+h2{
+	color: black;
+}

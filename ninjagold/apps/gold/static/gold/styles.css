@@ -1,0 +1,33 @@
+stylesheet.css*{
+	margin: 0px;
+	padding: 0px;
+}
+.wrapper{
+	width: 100%;
+	padding: 20px;
+}
+.box{
+	outline: 1px solid black;
+	display: inline-block;
+	min-width: 100px;
+	min-height: 100px;
+	padding: 20px;
+	margin: 20px 10px 20px 10px;
+	background-color: brown;
+	color: darkorange;
+}
+#result{
+	margin-left: 20px;
+	width: 80%;
+	outline: 2px solid black;
+	overflow: scroll;
+	height: 300px;
+	color: green;
+}
+.wrapper p{
+	margin-left: 20px;
+}
+#red{
+	color: red;
+	font-weight: bolder;
+}

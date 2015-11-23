@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Random String Generator!</title>
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'random_word/style.css' %}">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="content">
+			<p>Random Word (attempt #{{request.session.attempt}})</p>
+			<div class="string">
+				<h2>{{request.session.mystring}}</h2>
+			</div>
+			<form action="{% url 'random_word' %}" method="post">
+				{% csrf_token %}
+				<button name="random_word">Generate</button>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
