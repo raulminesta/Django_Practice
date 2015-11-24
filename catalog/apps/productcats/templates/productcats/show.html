@@ -1,0 +1,27 @@
+ <html>
+<head>
+  <title>Products</title>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static 'productcats/styles.css' %}">
+</head>
+  <body>
+    <div class="create">
+        <h3>Update a Product: </h3>
+        <form action = "" method = "POST">
+          {% csrf_token %}
+          <label for="manufacturer">Manufacturer: 
+          <select name="manufacturer">
+            <option value="Kenneth Cole">Kenneth Cole</option>
+            <option value="Gap">Gap</option>
+            <option value="Rudy Project">Rudy Project</option>
+            <option value="Samsung">Samsung</option>
+          </select></label>
+          <label>Product Name: <input type = "text" name = "Title" placeholder="{{product.name}}"></label>
+          <label>Price ($):<input type = "text" name = "price" placeholder="{{product.price}}"></label>
+          <label>Description: <textarea placeholder="{{product.name}}" rows=4 cols= 30></textarea></label> 
+        </form>
+        <a href="/update/{{product_id}}"><button>Update</button></a>
+        <a href="/delete/{{product_id}}"><button>Delete</button></a>
+      </div>
+  </body>
+</html>
